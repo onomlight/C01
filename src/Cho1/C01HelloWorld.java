@@ -2,6 +2,12 @@ package Cho1; // 패키지명(폴더와 유사)
 
 
 public class C01HelloWorld // 클래스 영역 - 객체 지향 구현단위
+
+
+//매서드(함수) 종류
+// main 매서드(함수) : 최초로(제일처음) 실행되는 매서드
+// library 매서드(함수) : 미리 만들어진 매서드
+// 사용자정의 매서드(함수) :"  프로그래머에 의해 제작되는 메서드
 {
 
 	public static void main(String[] args) // Main 매서드 영역 - 절차지향 구현 단위
