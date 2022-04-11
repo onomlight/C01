@@ -1,6 +1,6 @@
 package Ch03;
 
-public class Ch04ArithChange {
+public class C04ArithChange {
  
 	public static void main(String[] args) {
 		// 산술연산시 자동형변환
