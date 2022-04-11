@@ -73,6 +73,30 @@ public class C04자료형 {
 //		System.out.println("var2 :" + var2);
 //		System.out.println("var3 :" + var3);
 //		System.out.println("var4 :" + var4);
+		
+		
+		
+		
+		
+		
+		// --------------------------------
+		// double 자료형(8byte) - 기본자료형(소수점15~18자리)
+		// float 자료형(4byte) - (5~8자리)
+		// --------------------------------
+		
+		//공간                값 
+		double var1 = 10.7777777777777777777 ;//20개
+		float var2 = 10.77777777777777777F; //float var2 = 10.77777777777777777; > 자료형이 달라 오류 발생 / 4바이트 <> 8바이트  
+		double var3 = 30.5;
+		double var4 = 40.5;
+	
+		
+		
+		System.out.println("var1 :" + var1);
+		System.out.println("var2 :" + var2);
+		System.out.println("var3 :" + var3);
+		System.out.println("var4 :" + var4);
+		
 	}
 
 }
