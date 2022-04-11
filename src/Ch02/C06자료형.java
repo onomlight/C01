@@ -15,7 +15,7 @@ public class C06자료형 {
 		String str3 = "홍길동입니다";
 		System.out.println(str1 + " " + str2 + " " + str3 );
 		// String 클래스 자료형 str1,2,3 변수명 
-				
+				// str 주소
 				
 		
 	}
