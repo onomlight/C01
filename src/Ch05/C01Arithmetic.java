@@ -138,7 +138,7 @@ public class C01Arithmetic {
 		System.out.println(" << 시프트 연산 : "  + num7);
 		System.out.println(" >> 비트 연산 : "  + num8);
 //		
-		
+		// 핳ㅇㄹ
 		
 		//시프트 연산자
 		
