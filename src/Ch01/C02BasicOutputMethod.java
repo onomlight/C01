@@ -1,4 +1,4 @@
-package Cho1;
+package Ch01;
 
 public class C02BasicOutputMethod {
 
