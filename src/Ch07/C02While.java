@@ -10,7 +10,7 @@ public class C02While {
 		// 
 //		int dan=2;
 //		int i = 1;
-//		while(dan<=9) 
+//		while(dan<=9) //
 //		{
 //			i=1;
 //			while(i<=9) 
