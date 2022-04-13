@@ -23,6 +23,19 @@ public class C02While {
 //		}
 		// 1)전체 구구단은 역순출력합니다. 9*1...2*9 
 		
+//		int dan=9;
+//		int i = 1;
+//		while(dan>1) 
+//		{
+//			i=1;
+//			while(i<=9) 
+//			{
+//				System.out.printf("%d x %d = %d\n", dan,i,(dan*i));
+//				i++;
+//			}
+//		System.out.println();
+//			dan--;
+//		}
 		
 		// 2) 9*9 9*8.. 2*1
 		
@@ -50,20 +63,20 @@ public class C02While {
 		
 		// 전체 구구단(세로)
 		
-		int dan=2;
-		int i = 1;
-		while(dan<=9) 
-		{
-			i=1;
-			while(i<=9) 
-			{
-		//		System.out.println("%d x %d = %d\n", dan,i,(dan*i));
-				i++;
-			}
-		System.out.println();
-			dan++;
-		}
-		
+//		int dan=2;
+//		int i = 1;
+//		while(dan<=9) 
+//		{
+//			i=1;
+//			while(i<=9) 
+//			{
+//				System.out.println("%d x %d = %d\n", dan,i,(dan*i));
+//				i++;
+//			}
+//		System.out.println();
+//			dan++;
+//		}
+//		
 		// *****
 		// *****
 		// *****

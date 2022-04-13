@@ -109,13 +109,13 @@ public class C01While {
 		// 구구단 2단 출력합니다.
 		// 2*1 2*2 2*3 2*4... 2*9 
 		// i= 1 1++ i<=9
-//		int i = 1;
-//		while(i<=9) {
-//			
-//			System.out.printf("%d x %d =%d\n",2,i,(2*i));
-//			i++;
-//		}
-//			
+		int i = 1;
+		while(i<=9) {
+			
+			System.out.printf("%d x %d =%d\n",2,i,(2*i));
+			i++;
+		}
+			
 			
 		// 단수를 하나 입력 받아서 해당 단수를 출력합니다
 		
@@ -137,21 +137,21 @@ public class C01While {
 		// 1부터 10까지 수 중의 짝수의 합 / 홀수의 합 따로 구해서 출력
 		
 		
-
-		int i =1; int oddsum=0,evensum=0;
-		
-		while(i<=10) 
-		{
-			if(i%2==0) {
-			System.out.println("짝수 i = " + i);
-			evensum+=i;
-			}else {
-				System.out.println("홀수 i = " + i);
-				oddsum+=i;
-			}
-			i++;
-		}
-		System.out.printf("짝수 합=%d, 홀수합  = %d\n" , evensum,oddsum);
+//
+//		int i =1; int oddsum=0,evensum=0;
+//		
+//		while(i<=10) 
+//		{
+//			if(i%2==0) {
+//			System.out.println("짝수 i = " + i);
+//			evensum+=i;
+//			}else {
+//				System.out.println("홀수 i = " + i);
+//				oddsum+=i;
+//			}
+//			i++;
+//		}
+//		System.out.printf("짝수 합=%d, 홀수합  = %d\n" , evensum,oddsum);
 		
 		// 1부터 N까지 수 중의 3배수의 합만 출력
 		// 1부터 N까지 수 중의 짝수의 합 / 홀수의 합만 따로 구해서 출력
