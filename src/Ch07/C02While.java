@@ -16,7 +16,7 @@ public class C02While {
 //			while(i<=9) 
 //			{
 //				System.out.printf("%d x %d = %d\n", dan,i,(dan*i));
-//				i++;
+//	//			i++;
 //			}
 //		System.out.println();
 //			dan++;
