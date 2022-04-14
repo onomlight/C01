@@ -306,23 +306,23 @@ public class C02While {
 //		 ***
 //		 **
 //		 *
-		
-		int i = 0;
-		int j = 0;
-		
-		System.out.print(" 높이 : ");
-		Scanner sc = new Scanner(System.in);
-		int h= sc.nextInt();
-		while(i<h) {
-			j =0;
-			while(j<=(h-1)-i)
-			{
-				System.out.print("*");
-				j++;
-			}
-			System.out.println();
-			i++;
-		}
+//		
+//		int i = 0;
+//		int j = 0;
+//		
+//		System.out.print(" 높이 : ");
+//		Scanner sc = new Scanner(System.in);
+//		int h= sc.nextInt();
+//		while(i<h) {
+//			j =0;
+//			while(j<=(h-1)-i)
+//			{
+//				System.out.print("*");
+//				j++;
+//			}
+//			System.out.println();
+//			i++;
+//		}
 			
 //		
 //		
@@ -330,20 +330,185 @@ public class C02While {
 //		      *
 //		     ***
 //		    *****
+		
+		
+		
+//		공백이 있어야함
+//		i       j(공백)       k(별)
+//		0       0-2          0-0
+//		1       0-1          0-2
+//		2       0-0          0-4
+//		3        X           0-6
+//
+//		----------------------------
+//
+//		i=0    j=0         k=0             
+//		i++    j++         k++
+//		i<4    j<=?2-i     k<=? 2*i
+
+//		int i=0; //행
+//		int j=0; //공백
+//		int k=0; //별
+//		while(i<4)
+//		{
+//			j=0;
+//			while(j<=2-i) 
+//			{
+//				System.out.print(" ");
+//				j++;
+//				
+//			}
+//			k=0;
+//			while(k<=2*i) 
+//			{
+//				System.out.print("*");
+//				k++;
+//			}
+//			// 공백을 찍고 나서 별을 찍음
+//			System.out.println();
+//			i++;
+//			
+//		}
+		
+		
+		
 //		
 //		 높이 : 3
 //	       *
 //	      ***
 //		 *****
+//		>> 풀이
+		
+//		높이 : 6 h
+//		i       j(공백)       k(별)
+//		0       0-4(h-2)     0-0
+//		1       0-3(h-2)-1   0-2
+//		2       0-2          0-4
+//		3       0-1          0-6
+//		4       0-0          0-8
+//		5        X           0-10 
+//		h-1        x         0-(j-1)*2
+//		----------------------------
+//
+//		i=0    j=0         k=0             
+//		i++    j++         k++
+//		i<6    j<=4-i      k<= 2*i
+//		i<h    j<=(h-2)-i  k<= 2*i
+		
+		
+		
+//		int i=0; //행
+//		int j=0; //공백
+//		int k=0; //별
 //		
+//		System.out.print(" 높이 : ");
+//		Scanner sc = new Scanner(System.in);
+//		int h = sc.nextInt();
+//		while(i<h) 
+//					
+//		
+//		{
+//			j=0;
+//			while(j<=(h-2)-i) 
+//			{
+//				System.out.print(" ");
+//				j++;
+//				
+//			}
+//			k=0;
+//			while(k<=2*i) 
+//			{
+//				System.out.print("*");
+//				k++;
+//			}
+//			// 공백을 찍고 나서 별을 찍음
+//			System.out.println();
+//			i++;
+//			
+//		}
+		
+		
 //		 *****
 //		  ***
 //		   *
-//		
+		
+		
+		
+//		int i=0; //행
+//		int j=0; //공백
+//		int k=0; //별
+//		while(i<4)
+//		{
+//			j=0;
+//			while(j<=i) 
+//			{
+//				System.out.print(" ");
+//				j++;
+//				
+//			}
+//			k=0;
+//			while(k<=6-(2*i)) 
+//			{
+//				System.out.print("*");
+//				k++;
+//			}
+//			// 공백을 찍고 나서 별을 찍음
+//			System.out.println();
+//			i++;
+//			
+//		}
+		
 //	높이 : 3
 //		 *****
 //		  ***
 //		   *
+		
+//		
+//		i     j 공백      k 별
+//		0     x        0-6
+//		1     0-0      0-4
+//		2     0-1      0-2
+//		3     0-2      0-0
+//
+//		>> h값을 입력 할 경우 i 마지막 값이 k 값의 2배수
+//		h-1            0-(h-1)*2
+//		>> 내가 생각한거i<4 j<=2+i k<= 2/i or  
+//
+//
+//
+//		------------------
+//		i=0   j=0     k=0
+//		i++   j++     k++
+//		i<4   j<=i-1   K<=6-(2*i)
+//
+//		i<h   j<=i-1  k<=(h-1)*2-(2*1)
+
+		
+//		int i=0; //행
+//		int j=0; //공백
+//		int k=0; //별
+//		
+//		Scanner sc= new Scanner(System.in);
+//		System.out.print("높이   :  ");
+//		int h = sc.nextInt();
+//		
+//		while(i<h)
+//		{
+//			j=0;
+//			while(j<=i) 
+//			{System.out.print(" "); 				j++; 	}
+//			k=0;
+//			while(k<=(h-1)*2-(2*i)) 
+//			{ 				System.out.print("*");  				k++; 			}
+//			// 공백을 찍고 나서 별을 찍음
+//			System.out.println();
+//			i++;
+//			
+//		}
+//		
+		
+		
+		
 //	
 			//--------------- 여기 사이 시험문제 ^^^^^^^^^^^^^^^^^^^^^^
 //          *
@@ -353,6 +518,54 @@ public class C02While {
 //		  *****
 //		   ***
 //		    *
+		
+
+
+//		 i              j              k
+//		 0             0-2            0-0
+//		 1             0-1            0-2
+//		 2             0-0            0-4
+//		 3              x             0-6
+//		 ---------------------------------
+//		              j=0             k=0
+//		              j++             k++
+//		              j<=i-1          k<=2*i
+//		 ---------------------------------
+//		 5             0-0            0-4
+//		 4             0-2            0-2
+//		 6             0-1            0-0
+//		 --------------------------------
+//		               j=0            k=0
+//		               j++            k++  
+//		               J<=i-4         k<=12-2*i
+		int i =0; // 행
+		int j = 0 ; // 공백
+		int k = 0 ; // 별
+		
+		while(i<7) {
+			if(i<4) {
+				// 공백 점점감소
+				j=0;
+				while(j<=2-i) {System.out.print(" "); j++;}
+				k=0;
+				while(k<=2*i) {System.out.print("*"); k++;}
+			}
+			else {
+				//공백 점점증가
+				j=0;
+				while(j<=i-4) {System.out.print(" "); j++;}
+			
+				// 별은 점점감소
+				k=0;
+				while(k<=6*2-2*i) {System.out.print("*");k++;}
+				
+			}
+			System.out.println();
+			i++;
+			
+		}
+		
+		
 //		
 //		
 //	 높이 (홀수값) : 3
