@@ -45,6 +45,7 @@ public class C01For {
 //			
 //		}
 //		System.out.println("1부터" + n + "까지의 합은" + sum + "입니다");
+		
 		//n부터 m까지수의 합을 구합니다(n,m은 키보드로 입력받습니다)
 //		int sum = 0,n,m,i ;
 //		Scanner sc = new Scanner(System.in);
@@ -59,6 +60,7 @@ public class C01For {
 //			
 //		}
 //		System.out.println(+n+"부터" +m + "까지의 합은" + sum + "입니다");
+		
 		//구구단 2단 출력합니다
 //		for(int i=2; i<10;i++) {
 //			for(int j=1;j<10;j++) {
@@ -138,6 +140,7 @@ public class C01For {
 		
 		//n부터 m까지 수 중의 3의배수의 합만 출력
 		
+		 
 		
 		//n부터 m까지 수 중의 짝수의 합 / 홀수의 합 따로 구해서 출력	
 
@@ -152,6 +155,14 @@ public class C01For {
 		//2 x 1 = 2
 		//..
 		//2 x 9 = 18
+		
+//		for(int j=9;j>=2;j--) {
+//			for(int i=1;i<=9;i++) {
+//				System.out.print(j +" * "+ i +" = "+ j * i + "\n");
+//			}
+//		}
+//		System.out.println();
+		
 
 		
 		//전체 구구단을 역순출력합니다 
@@ -161,16 +172,36 @@ public class C01For {
 		//..
 		//2 x 1 = 2
 		
+//		for(int j=9;j>=1;j--) {
+//			for(int i=9;i>=2;i--) {
+//				System.out.print(j +" * "+ i +" = "+ j * i + "\n");
+//			}
+//		}
+//		System.out.println();
 
 		//단수를 입력받아(dan) dan-9단까지 출력합니다
 		//조건 : dan안의 숫자는 9미만이어야 합니다
 		
+//		System.out.print("실행할 구구단을 입력하세요");
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int i = sc.nextInt();
+//		for( int j = 1; j<10; j++) {
+//			System.out.println(i + "*" + j +" = " + i*j);
+//		}
+				
 		// 전체구구단(가로)
 		// 2 x 1 = 2 	3 x 1 = 3		... 	9 x 1 = 9
 		// 2 x 2 = 4	3 x 2 = 6		...		9 x 2 = 18
 		// ..
 		// 2 x 9 = 18	3 x 9 = 27				9 x 9 = 81
-		
+	
+//		for(int i=2; i<10; i ++) {
+//			for(int j=1; j<10; j++) {
+//				System.out.print(" "+i+"*"+j+" = " + i*j);
+//			}
+//			System.out.println();
+//		}
 //	
 		
 		// *****
@@ -186,6 +217,15 @@ public class C01For {
 //		i=0			j=0,j++,j<5
 //		i++
 //		i<4
+//		for(int i = 0; i<4 ; i++); {
+//			for(int j = 0; j<5; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//			
+//		}
+		
+		
 		
 
 		
@@ -193,13 +233,29 @@ public class C01For {
 		// **
 		// ***
 		// ****
+		
+//		for(int i = 1 ; i <=5; i++) {
+//			for(int j = 1 ; j <=i;j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
 
 		
 		// 높이 : 3
 		// *
 		// **
 		// ***
-		
+//		System.out.print(" 높이 : ");
+//		Scanner sc = new Scanner(System.in);
+//		int n= sc.nextInt();
+//		
+//		for(int i = 1 ; i <=n; i++) {
+//			for(int j = 1 ; j<=i;j++) {
+//			System.out.print("*");
+//		}
+//		System.out.println();
+//	}
 	
 		
 		
@@ -226,7 +282,20 @@ public class C01For {
 		//   *
 		//  ***
 		// *****	
-		
+//		Scanner sc =new Scanner(System.in);
+//		int n = sc.nextInt();
+//		
+//		for(int i = 1 ; i<=n ; i++) {
+//			for(int j=1; j<=n-i; j++) {
+//				System.out.print(" ");
+//				
+//			}
+//			for (int k = 1; k < 2*i-1; k++) {
+//				System.out.print("*");
+//				
+//			}
+//			System.out.println();
+//		}
 	
 		
 		
@@ -250,6 +319,26 @@ public class C01For {
 		// *****
 		//  ***
 		//   *
+		
+//		for (int i = 1; i < 6; i++) {
+//			for (int j = 5; j > i; j--) {             //위쪽 삼각형
+//				System.out.print(" ");
+//			}
+//			for (int j = 1; j <= i * 2 - 1; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		for (int i = 4; i > 0; i--) {                //아래쪽 삼각형
+//			for (int j = 5; j > i; j--) {
+//				System.out.print(" ");
+//			}
+//			for (int j = 1; j <= i * 2 - 1; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
 
 		// 높이(홀수값) : 3
 		//  *
@@ -258,6 +347,27 @@ public class C01For {
 		
 		
 		
+		Scanner sc =new Scanner(System.in);
+		int n = sc.nextInt(); 
+		
+		for (int i = 1; i < 6; i++) {
+			for (int j = 5; j > i; j--) {             
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= i * 2 - 1; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for (int i = 4; i > 0; i--) {                
+			for (int j = 5; j > i; j--) {
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= i * 2 - 1; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 		
 		
 		
