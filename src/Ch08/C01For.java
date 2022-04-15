@@ -133,8 +133,9 @@ public class C01For {
 //				
 //		}
 //			
-//				System.out.println(+n+"까지의 홀수 합은 :"+a+"입니다.");
-//				System.out.println(+n+"까지의 짝수 합은 :"+b+"입니다.");
+//				System.out.println(+n+"까지의 짝수 합은 :"+a+"입니다.");
+//				System.out.println(+n+"까지의 홀수 합은 :"+b+"입니다.");
+		
 		//n부터 m까지 수 중의 3의배수의 합만 출력
 		
 		
