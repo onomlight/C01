@@ -30,7 +30,7 @@ public class C03Switch {
 		
 		
 		// 02 break 필요성
-		int rank = 1;
+		int rank = 2;
 		String medalColor;
 		
 		switch(rank)
@@ -48,7 +48,7 @@ public class C03Switch {
 				medalColor = "없음";
 				
 		}
-	//	System.out.println("메달 : " + medalColor); break 가 업승면 밑에서 부터 내려옴
+		// System.out.println("메달 : " + medalColor); // break 가 업승면 밑에서 부터 내려옴
 	}
 
 }

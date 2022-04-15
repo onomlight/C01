@@ -573,35 +573,35 @@ public class C02While {
 //		***
 //		 *
 		
-		int i = 0;
-		int j = 0;
-		int k = 0;
-		System.out.println("높이 : ");
-		Scanner sc = new Scanner(System.in);
-		int h = sc.nextInt();
-		while(i<7)
-		{
-			if(i<4) {
-				
-				// 공백 점점감소
-				j=0;
-				while(j<=2-i) {System.out.print(" "); j++;}
-				//별 점점 증가
-				k=0;
-				while(k<=6*2-2*i) {System.out.print("*"); k++;}
-				
-				}
-			else {
-				// 공백(점점증가)
-				j=0;
-				while(j<=i-(h/2)+1) {System.out.print(" "); j++;}
-				//별 점점 감소
-				k=0;
-				while(k<=(h-1)*2-(2*i)) {System.out.print("*"); k++;}
-			}
-			System.out.println();
-			i++;
-			}
+//		int i = 0;
+//		int j = 0;
+//		int k = 0;
+//		System.out.println("높이 : ");
+//		Scanner sc = new Scanner(System.in);
+//		int h = sc.nextInt();
+//		while(i<7)
+//		{
+//			if(i<4) {
+//				
+//				// 공백 점점감소
+//				j=0;
+//				while(j<=2-i) {System.out.print(" "); j++;}
+//				//별 점점 증가
+//				k=0;
+//				while(k<=6*2-2*i) {System.out.print("*"); k++;}
+//				
+//				}
+//			else {
+//				// 공백(점점증가)
+//				j=0;
+//				while(j<=i-(h/2)+1) {System.out.print(" "); j++;}
+//				//별 점점 감소
+//				k=0;
+//				while(k<=(h-1)*2-(2*i)) {System.out.print("*"); k++;}
+//			}
+//			System.out.println();
+//			i++;
+//			}
 				
 				
 		
