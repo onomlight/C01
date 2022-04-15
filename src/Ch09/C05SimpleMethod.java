@@ -37,7 +37,12 @@ class C05Simple{
 		
 	}
 }
-
+// subclass 를 선언하고
+// sub1,sub2,sub3,sub4 맴버 메서드를 만들어서 실행해봅니다 ( 두수의 차 계산함수)
+// sub1(int x , int y) : int
+// sub2() : void
+// sub(int x, int y) : void
+// sub4() : int
 public class C05SimpleMethod {
 
 	public static void main(String[] args) {
