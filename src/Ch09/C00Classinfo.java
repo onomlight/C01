@@ -59,6 +59,7 @@ public class C00Classinfo {
 		// 클래스 영역 			: 공유 메모리(stiatic변수, static메서드,생성자)
 		// 스택 영역			: 일반변수,참조변수
 		// 힙 영역			: 객체
+		
 	}
 
 }
