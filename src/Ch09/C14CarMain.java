@@ -1,21 +1,29 @@
 package Ch09;
 
 
-class C10Car{
+class C14Car{
 	//속성
 	public String owner;
+	public String model;
 	public int speed;
 	public int fuel;
 	
 	public String cupholder1;
 	public String cupholder2;
 	
-	//기능 추가(함수 오버로딩)
-	//AddCupholder(String b1) : void		-> 멤버변수 cupholder1에 b1 문자열 저장
-	//AddCupholder(String b1,String b2) : void -> 멤버변수 cupholder1,2에 각각 b1,b2 저장
-	//ShowInfo():void : owner,speed,fuel,cupholder1,cupholder2를 각각 출력하는 메서드
+
 	
+	//생성자
 	
+	C14Car(){}
+	C14Car(String o, String m, int f, int s){
+		this.owner=o; this.model=m;this.fuel=f;this.speed=s;
+	}  //소유자(owner),모델(model),연료량(fuel),속도(speed)
+	C14Car(String o, String m, int f, int s,String b1){
+		this.owner=o; this.model=m;this.fuel=f;this.speed=s;this.cupholder1=b1;
+	} // 소유자(owner),모델(model),연료량(fuel),속도(speed),홀더1(cup1)
+	C14Car(String o, String m, int f, int s,String b1,String b2){
+		this.owner=o; this.model=m;this.fuel=f;this.speed=s;this.cupholder1=b1;this.cupholder2=b2;	} // 소유자(owner),모델(model),연료량(fuel),속도(speed),홀더1(cup1),홀더2(cup2)
 	void AddCupholder(String b1) {
 		this.cupholder1=b1;
 	
@@ -72,15 +80,20 @@ class C10Car{
 		
 	}
 }
-public class C10CarMain {
+public class C14CarMain {
 	public static void main(String[] args) {
-		C10Car hong = new C10Car();
-		hong.owner = "홍길동";
-		hong.speed = 50;
-		hong.fuel = 100;
-		hong.AddCupholder("식혜");
-		hong.AddCupholder("식혜", "아아");
-		 
+		
+		C14Car mycar1 = new C14Car("홍길동","아반떼",0,100,"식혜","수정과");
+					// 소유자(owner),모델(model),연료량(fuel),속도(speed),홀더1(cup1),홀더2(cup2)
+		mycar1.showInfo();
+		C14Car mycar2 = new C14Car("홍길동","아반떼",0,100,"아아");
+		// 소유자(owner),모델(model),연료량(fuel),속도(speed),홀더1(cup1)
+		System.out.println();
+		mycar2.showInfo();
+		C14Car mycar3 = new C14Car("홍길동","아반떼",0,100);
+		//소유자(owner),모델(model),연료량(fuel),속도(speed)
+		System.out.println();
+		mycar3.showInfo();
 		
 
 	}
