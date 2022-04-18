@@ -1,12 +1,21 @@
 package Ch09;
 
 
-class C08Car{
+class C10Car{
 	//속성
 	public String owner;
 	public int speed;
 	public int fuel;
 	//기능
+	
+	public String Cipholder1;
+	public String Cipholder2;
+	
+	// 기능추가
+	// Addcupholder(String b1 ) : void   -> 멤버 변수 cupholder1에 b1 문자열 저장
+	// Addcupholder(String b1,String b2 ) : void -> 멤버 변수 cupholder1,2에 각각 b1,b2저장
+	// ShowInfo():void : owner,speed,fuel,cupholder1,cupholder2를 각각 출력하는 메서드 
+	
 	public void Accel() {
 		//현재속도에서 +10 증가
 		//연료량은 -5 감소
@@ -60,24 +69,16 @@ class C08Car{
 	}
 	
 }
-public class C08CarMain {
+public class C10CarMain {
 
 	public static void main(String[] args) {
-		C08Car hong = new C08Car();
+		C10Car hong = new C10Car();
 		hong.owner = "홍길동";
 		hong.speed =  50;
 		hong.fuel = 100;
 		
 		
-		while(true) 
-		{
-			try {
-			Thread.sleep(500); // 0.5초 일시정지 // 잠깐 정지시키고 처리함
-			hong.Accel();
-			}
-			catch(Exception e) {}
 		
-		}
 
 	}
 
