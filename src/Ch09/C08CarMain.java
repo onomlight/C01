@@ -34,7 +34,9 @@ class C08Car{
 			
 			speed=200;
 			System.out.println(owner+"님의 차랑 최대속력입니다");
-		}else
+			System.exit(-1);
+		}
+		else
 		{
 			speed = speed+10; // speed+=10
 			System.out.printf(owner+"님의 차량 가속합니다. fuel=%d, 시속=%dkm/h\n",fuel,speed);
@@ -73,7 +75,8 @@ public class C08CarMain {
 		{
 			try {
 			Thread.sleep(500); // 0.5초 일시정지 // 잠깐 정지시키고 처리함
-			hong.Accel();
+			//hong.Accel();
+			hong.Break();
 			}
 			catch(Exception e) {}
 		
