@@ -43,9 +43,56 @@ class C05Simple{
 // sub2() : void
 // sub(int x, int y) : void
 // sub4() : int
-public class C05SimpleMethod {
 
-	public static void main(String[] args) {
+class subclass
+{
+
+	//속성
+	Scanner sc= new Scanner(System.in);
+	//기능
+	int sub1(int x, int y) {
+		if(x>y) {
+			return x-y;
+		} else {
+			return y-x;
+			
+		}
+		}
+	void sub2() {
+	System.out.print(" 두 수 입력 : ");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		if(x>y) {
+			System.out.println(x-y);
+		}else {
+			System.out.println(y-x);
+		}
+	}
+	void sub3(int x, int y) {
+	
+		if(x>y) {
+			System.out.println(x-y);
+		}else {
+			System.out.println(y-x);
+		}
+	
+	}
+	int sub4() {
+		
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		if(x>y) {
+			return(x-y);
+		}else {
+			return(y-x);
+		}
+	}
+	
+public class C05SimpleMethod 
+// 객체의 대한 모든정보를 일부만 다음 , 속성 과 기능으로 나눠짐 / 속성 : 데이트값 / 기능 : 액션
+{
+
+	public void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		C05Simple obj = new C05Simple();
@@ -62,3 +109,5 @@ public class C05SimpleMethod {
 	}
 
 }
+}
+
