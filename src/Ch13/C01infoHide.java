@@ -60,7 +60,6 @@ public void setHeight(double height) {
 	}
 
 public class C01infoHide {
-
 	public static void main(String[] args) {
 		
 		C01Person hong = new C01Person("홍길동", 30,70.8F,177.5);
