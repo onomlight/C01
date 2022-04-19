@@ -1,4 +1,4 @@
-package Ch13;
+package test;
 // 셀러임
 public class Store {
 	

@@ -1,6 +1,6 @@
-package Ch13;
+package test;
 
-public class Main {
+public class Main12 {
 
 	public static void main(String[] args) {
 
