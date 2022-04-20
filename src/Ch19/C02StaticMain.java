@@ -19,7 +19,9 @@ class Rectangle
 	}
 	// 시작점,너비,높이,끝점확인
 	void ShowInfo() {
-		
+		System.out.printf("X의 시작점 = %d Y의 시작점 = %d\n",x, y);
+		System.out.print("너비 :" + width);
+		System.out.print("높이 :" + height);
 	}
 }
 public class C02StaticMain {
