@@ -14,6 +14,9 @@ public class C03FileOutputStream {
 			out.write('다');
 			out.write('라');
 			
+			out.flush();
+			out.close();
+			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

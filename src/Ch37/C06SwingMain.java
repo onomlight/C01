@@ -1,10 +1,13 @@
-package Ch36;
+package Ch37;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.FileWriter;
+import java.io.Writer;
+import java.util.Date;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,15 +16,16 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-class C01GUI extends JFrame implements ActionListener,KeyListener
+class C06GUI extends JFrame implements ActionListener,KeyListener
 {
 	//
 	JButton btn1;
 	JButton btn2;
+	JButton btn3;
 	JTextField txt1;
 	JTextArea area1;
 	// 생산자위에다 지워 써야 사용가능함 
-	C01GUI(){
+	C06GUI(){
 		super(); //상위클래스 생성자 호출
 		setTitle("Listner적용하기");
 		
@@ -36,6 +40,7 @@ class C01GUI extends JFrame implements ActionListener,KeyListener
 		//컴포넌트 객체 생성
 		 btn1 = new JButton("입력");
 		 btn2 = new JButton("종료");
+		 btn3 = new JButton("파일로 저장");
 		 txt1 = new JTextField();
 		 area1 = new JTextArea();
 		JScrollPane scroll1 = new JScrollPane(area1);
@@ -46,11 +51,12 @@ class C01GUI extends JFrame implements ActionListener,KeyListener
 		txt1.setBounds(50,350,190,30);
 		btn1.setBounds(50,400,80,30);
 		btn2.setBounds(160,400,80,30);
-		
+		btn3.setBounds(250,50,100,30);
 		//컴포넌트를 리스너에 등록
 		btn1.addActionListener(this);
 		btn2.addActionListener(this);
 		txt1.addKeyListener(this);
+		btn3.addActionListener(this);
 		
 		//기타 설정
 		area1.setEditable(false);
@@ -61,6 +67,7 @@ class C01GUI extends JFrame implements ActionListener,KeyListener
 		pan1.add(txt1);
 		//pan1.add(area1);  // Scroll추가시 제거
 		pan1.add(scroll1);
+		pan1.add(btn3);
 		
 		
 		//레이아웃 null
@@ -68,9 +75,11 @@ class C01GUI extends JFrame implements ActionListener,KeyListener
 		
 		//패널을 프레임에 추가
 		add(pan1);	
-		setBounds(100,10,300,500);
+		setBounds(100,10,360,500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setResizable(false);
 		setVisible(true);	
+		
 	}
 
 	@Override
@@ -85,6 +94,19 @@ class C01GUI extends JFrame implements ActionListener,KeyListener
 		}
 		if(e.getSource()==btn2) {
 			System.exit(-1);
+		}
+		if(e.getSource()==btn3) {
+			try {
+			System.out.println("파일로 저장 버튼 클릭!");
+			Writer out = new FileWriter("C:\\abcd\\Dialog.txt",true);
+			Date date = new Date(); // 날짜시간 정보 출력
+			out.write("---------------"+date+"-------------------");
+			out.write(area1.getText());
+			out.flush();
+			out.close();
+		}catch(Exception e1) {
+			e1.printStackTrace();
+		}
 		}
 		
 	}
@@ -119,11 +141,11 @@ class C01GUI extends JFrame implements ActionListener,KeyListener
 	
 }
 
-public class C01SwingMain {
+public class C06SwingMain {
 
 	public static void main(String[] args) {
 		
-		new C01GUI();
+		new C06GUI();
 	}
 
 }
