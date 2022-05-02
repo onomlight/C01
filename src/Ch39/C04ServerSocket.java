@@ -41,7 +41,7 @@ public class C04ServerSocket {
 							break;
 			}
 			Dout.close();
-			Din.close();
+			Din.close(); 
 			client.close();
 			server.close();
 			
